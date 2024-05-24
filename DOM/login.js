@@ -8,4 +8,4 @@ if (loginFrom.checkValidity()) {
 } else {
   console.log("Form not valid!");
 }
-loginFrom.classList.add("was-validated");
+loginFrom.classList.add("was-validated"); 
