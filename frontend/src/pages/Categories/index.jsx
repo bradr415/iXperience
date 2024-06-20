@@ -12,6 +12,8 @@ import ErrorToast from "../../components/ErrorToast";
 import AddEditCategoryModal from "../../components/AddEditCategoryModal";
 import DeleteCategoryModal from "../../components/DeleteCategoryModal";
 
+
+
 export default function CategoriesPage() {
   const user = JSON.parse(localStorage.getItem("user"));
 
@@ -106,7 +108,7 @@ export default function CategoriesPage() {
   const AddButton = () => {
     if (!user || !user.token) return null;
     return (
-      <button className="btn btn-outline-dark m-3" onClick={onCategoryAdd}>
+      <button className="btn btn-outline-dark h-75" onClick={onCategoryAdd}>
         ADD CATEGORY
       </button>
     );

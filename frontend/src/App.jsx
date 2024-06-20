@@ -33,6 +33,10 @@ const routes = [
     element: <BlogPage />,
   },
   {
+    path: "/profile/:authorId",
+    element: <ProfilePage />
+  },
+  {
     path: "/categories",
     element: <CategoriesPage />,
   },
@@ -43,10 +47,6 @@ const routes = [
   {
     path: "/register",
     element: <RegisterPage />,
-  },
-  {
-    path: "/profile/:authorId",
-    element: <ProfilePage />,
   },
 ];
 const router = createBrowserRouter(routes);
